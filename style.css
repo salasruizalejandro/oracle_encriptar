@@ -1,0 +1,259 @@
+* {
+    background: #E5E5E5;
+    
+}
+
+.cajaheader{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    padding: 15px;
+    padding-bottom: 20px;
+    padding-left: 70px;
+    padding-top: 20px;
+}
+
+@keyframes animar{
+    0%{-webkit-transform:translate(0px, 0px);}
+    10%{-webkit-transform:translate(10px, 0px);}
+    20%{-webkit-transform:translate(0px, 0px);}
+    30%{-webkit-transform:translate(10px, 0px);}
+    40%{-webkit-transform:translate(0px, 0px);}
+    50%{-webkit-transform:translate(10px, 0px);}
+    60%{-webkit-transform:translate(0px, 0px);}
+    70%{-webkit-transform:translate(10px, 0px);}
+    80%{-webkit-transform:translate(0px, 0px);}
+    90%{-webkit-transform:translate(10px, 0px);}
+}
+
+#logo:hover{
+    animation:animar 0.5s, 1;
+}
+
+#text_encriptador{
+    display: flex;
+    color: #0A3871;
+    font-family: 'Kanit', sans-serif;
+    font-size: 38px; 
+    width: 300px;
+    height: 40px;
+    line-height: 40px;  
+    overflow: hidden; 
+}
+
+#text_encriptador ul{
+    padding-left: 10px;
+    animation: cambiar 7s infinite;
+}
+
+@keyframes cambiar {
+    0%{margin-top: 0;}
+    20%{margin-top: 0;}
+
+    25%{margin-top: -40px;}
+    50%{margin-top: -40px;}
+
+    55%{margin-top: 0px;}
+    80%{margin-top: 0px;}
+
+    85%{margin-top: -40px;}
+    95%{margin-top: -40px;}
+
+    100%{margin-top: 0;}
+}
+
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cajatxtbotton{
+    display:flex;
+    flex-direction: column ;
+    padding-left: 50px;
+}
+
+.textarea_ingres{
+    width: 500px;
+    height: 400px;
+    left: 240px;
+    padding: 18px;
+    border-radius: 24px;
+    top: 168px;
+    border: 0px solid #ccc;
+    color: #0A3871;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 150%;
+}
+    
+
+.textarea_ingres:focus{
+    outline: none ;
+    border:1px solid #0A3871;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+
+#imagenPrecaucion{
+    width: 15px;
+    height: 15px    
+}
+
+#condiciones{
+    width: 300px;
+    height: 18px;
+    padding-bottom: 10px;
+    font-family:  'Kanit', sans-serif;
+    font-size: normal;
+    font-weight: 400;
+    font-size: size;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+}
+
+.boton_encrip{
+    float: left;
+    font-family:  'Kanit', sans-serif;
+    font-size: 20px;
+    height: 67px;
+    width: 220px;
+    
+    border-radius: 24px;
+    border-color: #0A3871;
+    background: #0A3871;
+    color: white;  
+}
+
+.boton_encrip:hover{
+    background: #1d5ca8;
+    font-size: 25px;
+}
+
+
+
+ 
+    
+ 
+    
+
+
+
+.boton_desencrip{
+    float: right;
+    font-family:  'Kanit', sans-serif;
+    font-size: 20px;
+    height: 67px;
+    width: 220px;
+       
+    border-radius: 24px;
+    border-color: whitesmoke;
+    background: whitesmoke;
+    color: #0A3871;    
+}
+ 
+.boton_desencrip:hover{
+    background: white;
+    font-size: 25px;
+}
+    
+.caja_descript{
+    
+    display:flex;
+    flex-direction: column ;
+    padding-right: 30px;
+    align-items: center;
+    float: right; 
+    justify-content: end;   
+}
+
+.contenedorTextoEncriptado{
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 400px;
+}
+    
+.imagenFondo{
+    float: left;
+    width: 500px;
+    height: 400px;
+    left: 1000px;
+    top: 40px;
+    padding: 18px;
+}
+
+.textodes_encriptado{
+    float: left;
+    width: 500px;
+    height: 400px;
+    left: 1000px;
+    top: 40px;
+    padding: 18px;
+
+    background-repeat : no-repeat;
+    background-size :contain ;
+    box-shadow: 0px 24px 32px -8px rgb(0, 0, 0, 0.08);
+    border: 0px solid #ccc;
+    border-radius: 32px;
+    color: #0A3871;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 150%;
+}
+
+.textodes_encriptado:focus{
+    outline: none ;
+    border:1px solid #0A3871;
+    box-shadow: 0 0 10px #719ECE;
+}
+    
+.copiar{
+    font-family:  'Kanit', sans-serif;
+    font-size: 20px;
+    height: 67px;
+    width: 220px;
+    margin-top: 30px;
+    border-radius: 24px;
+    border-color: #0A3871;
+    background: #0A3871;
+    color: white;
+}
+
+.copiar:hover{
+    background: #1d5ca8;
+    font-size: 25px;
+}
+
+.footer_caja{
+    float: right;
+    clear: both;
+    color: #0A3871;
+    font-family: 'Kanit', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+    
+    
+
+        
+
+
+
+
+
+
+

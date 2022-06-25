@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Encriptador de Texto</title>
+</head>
+<body >
+    <header class="cajaheader">
+        <div>
+            <img id="logo" src="Img/Alura.png" alt="Logo Alura" >
+        </div>
+        <div id="text_encriptador">
+            <p>Alura</p>
+        <ul>
+            <li>Challenge</li>
+            <li>Encriptador</li>
+        </ul>
+        </div> 
+    </header>
+    <main>
+        <section class="cajatxtbotton">
+            <div>
+                <form>
+                <textarea  class="textarea_ingres" name="Ingrese_texto" placeholder="Ingrese texto"></textarea> 
+                </form>
+            </div>
+            <div>
+                <h4 id="condiciones"><img  id="imagenPrecaucion" alt="precaucion" src="Img/precaucion.png"> Solo letras minúsculas y sin acentos</h4>
+            </div>
+            
+            <div>
+                <div>
+                    <button class="boton_encrip" 
+                    onclick="btencriptar()"
+                    type="button" name="encriptar" value="Encriptar">Encriptar</button>
+                </div>
+                <div>
+                    <button class="boton_desencrip" type="button"
+                    onclick="btDesencriptar()" name="Desencriptar" value="Desencriptar">Desencriptar</button>
+                </div>
+                
+                
+            </div>
+             
+        </section>
+        
+        <section class="caja_descript">
+            <div class="contenedorTextoEncriptado">
+                <img  class="imagenFondo" alt="Imagen_fondo" src="Img/Imagen_informativa.png">
+                <textarea class="textodes_encriptado"  name="Texto Encriptado / Desencriptado"></textarea>
+                
+            </div>
+            <button class="copiar" onclick="copiar()" type="button" name="Copiar" value="Copiar">Copiar</button>
+            
+        </section>
+
+    </main>
+    <footer class="footer_caja">
+        <h6>@Copyright Alejandro Ruiz</h6>
+    </footer>
+    <script src="main.js"></script>
+             
+</body>
+
+</html>
